@@ -304,3 +304,28 @@ form select, form select, form select {
   border: 2px solid #eff0f2;
   color: #eff0f2;
 }
+
+.blurImg {
+  position:absolute;
+  width: 100%;
+  height: 440px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.blurImg > div {
+  position: absolute;
+  z-index:0;
+  width: 100%;
+  height: 440px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.blur {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
