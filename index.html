@@ -132,14 +132,16 @@
 
 <scrip type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <scrip type="text/javascript" >
-  (function() {
-  $(window).scroll(function() {
-    var oVal;
-    oVal = $(window).scrollTop() / 240;
-    return $(".blur").css("opacity", oVal);
-  });
-
-}).call(this);
+ $(document).ready(function(){
+   (function() {
+    $(window).scroll(function() {
+      var oVal;
+      oVal = $(window).scrollTop() / 240;
+      return $(".blur").css("opacity", oVal);
+    });
+  
+  }).call(this);
+});
 
 </script>
   </body>
